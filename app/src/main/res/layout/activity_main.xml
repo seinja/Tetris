@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/gamefield"
+            android:layout_width="320dp"
+            android:layout_height="610dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/levelText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Level:" />
+
+                <TextView
+                    android:id="@+id/textViewHighscore"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Highscore:"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textViewPunkte"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points:"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling"
+            tools:layout_editor_absoluteX="-5dp"
+            tools:layout_editor_absoluteY="631dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/leftButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/arrowleft" />
+
+            <ImageButton
+                android:id="@+id/rotateButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/arrowrotate" />
+
+            <ImageButton
+                android:id="@+id/downButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/arrowdown" />
+
+            <ImageButton
+                android:id="@+id/rightButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/arrowright" />
+
+            <LinearLayout
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonreset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset" />
+
+                <Button
+                    android:id="@+id/buttonstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
